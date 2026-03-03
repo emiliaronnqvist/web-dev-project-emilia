@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const PORT = 3008;
 
+const stores = require("./stores.json");
+
 app.get("/", (req, res) => {
   res.send("Welcome to the REST API!");
 });
