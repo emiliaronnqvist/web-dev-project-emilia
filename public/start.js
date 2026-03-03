@@ -21,20 +21,16 @@ fetch("/api/stores")
       const p = document.createElement("p");
       p.innerText = `${store.district}`;
 
+      // Following 5 lines was inspired by https://stackoverflow.com/questions/4772774/how-do-i-create-a-link-using-javascript
       const a = document.createElement("a");
-      a.innerText = `${store.url}`;
-
-      /*const button = document.createElement("button");
-      button.innerText = "Read more";
-
-      button.addEventListener("click", () => {
-        window.open("http://"`{$store.url}`);
-      }); */
+      const linkText = document.createTextNode("Read more");
+      a.appendChild(linkText);
+      a.title = "Read more";
+      a.href = "https://" + store.url;
 
       li.appendChild(h2);
       li.appendChild(p);
       li.appendChild(a);
-      li.appendChild(button);
 
       ul.appendChild(li);
     });
