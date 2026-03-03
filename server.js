@@ -4,9 +4,9 @@ const PORT = 3008;
 
 const stores = require("./stores.json");
 
-app.get("/", (req, res) => {
+/*app.get("/", (req, res) => {
   res.send("Welcome to the REST API!");
-});
+});*/
 
 // server.js
 app.use("/", express.static("public"));
