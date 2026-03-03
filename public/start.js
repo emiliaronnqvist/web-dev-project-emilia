@@ -21,11 +21,19 @@ fetch("/api/stores")
       const p = document.createElement("p");
       p.innerText = `${store.district}`;
 
-      const button = document.createElement("button");
+      const a = document.createElement("a");
+      a.innerText = `${store.url}`;
+
+      /*const button = document.createElement("button");
       button.innerText = "Read more";
+
+      button.addEventListener("click", () => {
+        window.open("http://"`{$store.url}`);
+      }); */
 
       li.appendChild(h2);
       li.appendChild(p);
+      li.appendChild(a);
       li.appendChild(button);
 
       ul.appendChild(li);
