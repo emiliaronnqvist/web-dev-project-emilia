@@ -5,3 +5,8 @@
   --color-secondary: rgb(244, 243, 242);
   --color-tertiary: rgb(255, 255, 255);
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}

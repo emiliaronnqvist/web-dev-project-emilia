@@ -12,6 +12,7 @@ fetch("/api/stores")
 
     // Displays stores on the webpage
     const ul = document.getElementById("storelist");
+
     data.forEach((store) => {
       const li = document.createElement("li");
 
@@ -25,7 +26,6 @@ fetch("/api/stores")
       const a = document.createElement("a");
       const linkText = document.createTextNode("Read more");
       a.appendChild(linkText);
-      a.title = "Read more";
       a.href = "https://" + store.url;
 
       li.appendChild(h2);
@@ -33,6 +33,8 @@ fetch("/api/stores")
       li.appendChild(a);
 
       ul.appendChild(li);
+
+      li.style.backgroundColor = "beige";
     });
   })
   .catch((error) => {
