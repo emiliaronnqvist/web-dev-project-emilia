@@ -20,6 +20,12 @@ fetch("/api/stores")
       const h2 = document.createElement("h2");
       h2.innerText = `${store.name}`;
 
+      //Following 4 lines was inspired by https://www.google.com/search?q=javascript+h%C3%A4mta+bild&oq=javascript+h%C3%A4mta+bild&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDkwMDZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
+      const img = document.createElement("img");
+      img.src = "img/";
+      img.alt = "district_pin";
+      img.width = 20;
+
       const p = document.createElement("p");
       p.innerText = `${store.district}`;
 
@@ -30,9 +36,15 @@ fetch("/api/stores")
       a.href = "https://" + store.url;
       a.classList.add("link");
 
-      li.appendChild(h2);
-      li.appendChild(p);
-      li.appendChild(a);
+      if (district === null) {
+        li.appendChild(h2);
+        li.appendChild(p);
+      } else if (district !== null) {
+        li.appendChild(h2);
+        li.appendChild(p);
+        li.appendChild(img);
+        li.appendChild(a);
+      }
 
       ul.appendChild(li);
     });
