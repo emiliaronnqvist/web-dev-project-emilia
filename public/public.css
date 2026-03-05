@@ -76,3 +76,8 @@ a {
   align-items: flex-start;
   flex-direction: column;
 }
+
+.link {
+  text-decoration: none;
+  color: black;
+}
