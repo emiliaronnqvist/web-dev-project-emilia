@@ -22,7 +22,7 @@ fetch("/api/stores")
 
       //Following 4 lines was inspired by https://www.google.com/search?q=javascript+h%C3%A4mta+bild&oq=javascript+h%C3%A4mta+bild&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDkwMDZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
       const img = document.createElement("img");
-      img.src = "img/";
+      img.src = "img/mappin.png";
       img.alt = "district_pin";
       img.width = 20;
 
