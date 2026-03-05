@@ -36,15 +36,10 @@ fetch("/api/stores")
       a.href = "https://" + store.url;
       a.classList.add("link");
 
-      if (district === null) {
-        li.appendChild(h2);
-        li.appendChild(p);
-      } else if (district !== null) {
-        li.appendChild(h2);
-        li.appendChild(p);
-        li.appendChild(img);
-        li.appendChild(a);
-      }
+      li.appendChild(h2);
+      li.appendChild(p);
+      li.appendChild(img);
+      li.appendChild(a);
 
       ul.appendChild(li);
     });
