@@ -42,7 +42,8 @@ h3 {
 }
 
 h3,
-p {
+p,
+a {
   font-family: clother, sans-serif;
   font-style: normal;
   font-weight: 300;
