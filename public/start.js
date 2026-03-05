@@ -27,6 +27,10 @@ fetch("/api/stores")
       img.alt = "district_pin";
       img.width = 20;
 
+      if (store.district === null) {
+        store.district = "Jönköping";
+      }
+
       const p = document.createElement("p");
       p.innerText = `${store.district}`;
 
