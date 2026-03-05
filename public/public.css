@@ -6,6 +6,18 @@
   --color-tertiary: rgb(255, 255, 255);
 }
 
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  padding-bottom: 2rem;
+}
+
 #storelist {
   list-style: none;
   padding: 0;
@@ -16,4 +28,6 @@
 
 .listItem {
   display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
