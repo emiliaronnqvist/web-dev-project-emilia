@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-  margin: 0;
+  margin-bottom: 0px;
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -54,10 +54,8 @@ a {
 }
 
 p {
-  margin: 0;
+  margin-bottom: 5px;
 }
-
-
 
 .hero_div {
   position: relative;
@@ -87,13 +85,13 @@ p {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-    padding-bottom: 30px;
-
+  padding-bottom: 30px;
 }
 
 .link {
   text-decoration: none;
   color: rgb(255, 255, 255);
   background-color: rgb(222, 186, 152);
-  padding: 5px;
+  padding: 8px;
+  border-radius: 8px;
 }
