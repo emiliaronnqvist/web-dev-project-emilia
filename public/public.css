@@ -27,8 +27,9 @@ h1 {
 
 h2 {
   margin: 0;
-   font-family: "Archivo Black", sans-serif;
+  font-family: "Archivo Black", sans-serif;
   font-weight: 400;
+  font-size: 20px;
   font-style: normal;
   color: rgb(91, 91, 91);
 }
@@ -38,6 +39,13 @@ h3 {
   justify-content: center;
   margin-top: 0;
   margin-bottom: 60px;
+}
+
+h3,
+p {
+  font-family: clother, sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }
 
 #firstRow {
