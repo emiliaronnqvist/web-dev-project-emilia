@@ -6,9 +6,9 @@
   --color-tertiary: rgb(255, 255, 255);
 }
 
-ul {
+#storelist {
   list-style: none;
   padding: 0;
-   display: grid;
+  display: grid;
   grid-template-columns: auto auto auto;
 }
