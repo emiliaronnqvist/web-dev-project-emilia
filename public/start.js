@@ -25,7 +25,7 @@ fetch("/api/stores")
 
       // Following 5 lines was inspired by https://stackoverflow.com/questions/4772774/how-do-i-create-a-link-using-javascript
       const a = document.createElement("a");
-      const linkText = document.createTextNode("READ MORE");
+      const linkText = document.createTextNode("Läs mer");
       a.appendChild(linkText);
       a.href = "https://" + store.url;
       a.classList.add("link");

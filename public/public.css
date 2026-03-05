@@ -57,9 +57,7 @@ p {
   margin: 0;
 }
 
-a {
-  padding-bottom: 30px;
-}
+
 
 .hero_div {
   position: relative;
@@ -89,9 +87,13 @@ a {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+    padding-bottom: 30px;
+
 }
 
 .link {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
+  background-color: rgb(222, 186, 152);
+  padding: 5px;
 }
