@@ -15,6 +15,7 @@ fetch("/api/stores")
 
     data.forEach((store) => {
       const li = document.createElement("li");
+      li.classList.add("listItem");
 
       const h2 = document.createElement("h2");
       h2.innerText = `${store.name}`;
