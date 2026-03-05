@@ -102,3 +102,9 @@ p {
   align-items: center;
   gap: 6px;
 }
+
+.pin {
+  width: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
