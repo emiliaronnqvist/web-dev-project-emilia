@@ -26,6 +26,7 @@ fetch("/api/stores")
       img.src = "img/mappin.png";
       img.alt = "district_pin";
       img.width = 20;
+      img.classList.add("pin");
 
       if (store.district === null) {
         store.district = "Jönköping";
@@ -33,6 +34,12 @@ fetch("/api/stores")
 
       const p = document.createElement("p");
       p.innerText = `${store.district}`;
+      p.classList.add("ditrict");
+
+      const pin_district_div = document.createElement("div");
+      pin_district_div.classList.add("pin_district_div");
+      pin_district_div.appendChild(img);
+      pin_district_div.appendChild(p);
 
       // Following 5 lines was inspired by https://stackoverflow.com/questions/4772774/how-do-i-create-a-link-using-javascript
       const a = document.createElement("a");
@@ -42,8 +49,7 @@ fetch("/api/stores")
       a.classList.add("link");
 
       li.appendChild(h2);
-      li.appendChild(p);
-      li.appendChild(img);
+      li.appendChild(pin_district_div);
       li.appendChild(a);
 
       ul.appendChild(li);

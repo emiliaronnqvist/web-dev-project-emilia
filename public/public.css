@@ -96,3 +96,9 @@ p {
   padding: 8px;
   border-radius: 8px;
 }
+
+.pin_district_div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
