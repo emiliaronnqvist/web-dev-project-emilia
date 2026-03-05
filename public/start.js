@@ -34,8 +34,6 @@ fetch("/api/stores")
       li.appendChild(a);
 
       ul.appendChild(li);
-
-      li.style.backgroundColor = "beige";
     });
   })
   .catch((error) => {
