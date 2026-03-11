@@ -34,7 +34,7 @@ fetch("/api/stores")
 
       const p = document.createElement("p");
       p.innerText = `${store.district}`;
-      p.classList.add("ditrict");
+      p.classList.add("district");
 
       const pin_district_div = document.createElement("div");
       pin_district_div.classList.add("pin_district_div");
