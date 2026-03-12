@@ -18,7 +18,7 @@ fetch("/api/stores")
       li.classList.add("listItem");
 
       const h2 = document.createElement("h2");
-      h2.innerText = `${store.name}`;
+      h2.innerText = store.name;
 
       // District Pin Image
       //Following 4 lines was inspired by https://www.google.com/search?q=javascript+h%C3%A4mta+bild&oq=javascript+h%C3%A4mta+bild&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDkwMDZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
@@ -33,7 +33,7 @@ fetch("/api/stores")
       }
 
       const p = document.createElement("p");
-      p.innerText = `${store.district}`;
+      p.innerText = store.district;
       p.classList.add("ditrict");
 
       const pin_district_div = document.createElement("div");
